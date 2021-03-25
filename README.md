@@ -1,6 +1,6 @@
-# Use the [lerna template](https://github.com/salesforcecli/lerna-template) if you need a library and plugin
+### Use the [lerna template](https://github.com/salesforcecli/lerna-template) if you need a library and plugin
 
-# Only use this template if you're very certain of what you are doing
+### This template is useful if the library is already in another repository or the plugin is a wrapper around an API.
 
 # plugin-&lt;REPLACE ME&gt;
 
