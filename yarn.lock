@@ -611,10 +611,10 @@
   resolved "https://registry.yarnpkg.com/@salesforce/dev-config/-/dev-config-2.1.2.tgz#b4e206f860e87065d068bf8ba3994a032389ad81"
   integrity sha512-1swy07rynHoTRk8lj6nuC0JceRBo300OuWnovQe2OMvLpQM5Dh1SUnv1SE8012PsrK9BC1WqGXp4BUyMo04x7w==
 
-"@salesforce/dev-scripts@^0.9.15":
-  version "0.9.15"
-  resolved "https://registry.yarnpkg.com/@salesforce/dev-scripts/-/dev-scripts-0.9.15.tgz#91dda26142d5a61e5d0bc7601c62b1a4b3832475"
-  integrity sha512-uoWzMN/aU1IaRtJ1RjImzh7SxPTXYRhxXLN6QJCDE5G+zkpQ9yfKLqThu4M+j5SbkAMrqAK7drv5LauZi9Vh4A==
+"@salesforce/dev-scripts@^0.9.18":
+  version "0.9.18"
+  resolved "https://registry.yarnpkg.com/@salesforce/dev-scripts/-/dev-scripts-0.9.18.tgz#a76a7d283980c39813394b1550d0cef20e26857e"
+  integrity sha512-roIa2A+o6DMvRQeAI7u5UfTZY+fdan1IyJUa+3ishcBG160Nt4hWJS9DZgXmRWY/BAuXXcnzQ7YS6Aaa2Vr73w==
   dependencies:
     "@commitlint/cli" "^12.1.4"
     "@commitlint/config-conventional" "^10.0.0"
@@ -624,7 +624,7 @@
     "@types/chai" "^4.2.11"
     "@types/mocha" "^8.2.2"
     "@types/node" "^15.6.1"
-    "@types/sinon" "^9.0.4"
+    "@types/sinon" "10.0.0"
     chai "^4.2.0"
     chalk "^4.0.0"
     cosmiconfig "^7.0.0"
@@ -872,17 +872,12 @@
   resolved "https://registry.npmjs.org/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@types/sinon@*", "@types/sinon@^9.0.4":
-  version "9.0.4"
-  resolved "https://registry.npmjs.org/@types/sinon/-/sinon-9.0.4.tgz#e934f904606632287a6e7f7ab0ce3f08a0dad4b1"
-  integrity sha512-sJmb32asJZY6Z2u09bl0G2wglSxDlROlAejCjsnor+LzBMz17gu8IU7vKC/vWDnv9zEq2wqADHVXFjf4eE8Gdw==
+"@types/sinon@*", "@types/sinon@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-10.0.0.tgz#eecc3847af03d45ffe53d55aaaaf6ecb28b5e584"
+  integrity sha512-jDZ55oCKxqlDmoTBBbBBEx+N8ZraUVhggMZ9T5t+6/Dh8/4NiOjSUfpLrPiEwxQDlAe3wpAkoXhWvE6LibtsMQ==
   dependencies:
-    "@types/sinonjs__fake-timers" "*"
-
-"@types/sinonjs__fake-timers@*":
-  version "6.0.1"
-  resolved "https://registry.npmjs.org/@types/sinonjs__fake-timers/-/sinonjs__fake-timers-6.0.1.tgz#681df970358c82836b42f989188d133e218c458e"
-  integrity sha512-yYezQwGWty8ziyYLdZjwxyMb0CZR49h8JALHGrxjQHWlqGgc8kLdHEgWrgL0uZ29DMvEVBDnHU2Wg36zKSIUtA==
+    "@sinonjs/fake-timers" "^7.0.4"
 
 "@typescript-eslint/eslint-plugin@^4.33.0":
   version "4.33.0"
