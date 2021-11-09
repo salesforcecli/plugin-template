@@ -1,10 +1,11 @@
 /*
- * Copyright (c) 2020, salesforce.com, inc.
+ * Copyright (c) 2021, salesforce.com, inc.
  * All rights reserved.
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
 
+import * as os from 'os';
 import { flags, SfdxCommand } from '@salesforce/command';
 import { Messages, SfdxError } from '@salesforce/core';
 import { AnyJson } from '@salesforce/ts-types';
@@ -20,15 +21,7 @@ const messages = Messages.loadMessages('@salesforce/plugin-template', 'org');
 export default class Org extends SfdxCommand {
   public static description = messages.getMessage('commandDescription');
 
-  public static examples = [
-    `$ sfdx hello:org --targetusername myOrg@example.com --targetdevhubusername devhub@org.com
-  Hello world! This is org: MyOrg and I will be around until Tue Mar 20 2018!
-  My hub org id is: 00Dxx000000001234
-  `,
-    `$ sfdx hello:org --name myname --targetusername myOrg@example.com
-  Hello myname! This is org: MyOrg and I will be around until Tue Mar 20 2018!
-  `,
-  ];
+  public static examples = messages.getMessage('examples').split(os.EOL);
 
   public static args = [{ name: 'file' }];
 
@@ -36,11 +29,11 @@ export default class Org extends SfdxCommand {
     // flag with a value (-n, --name=VALUE)
     name: flags.string({
       char: 'n',
-      description: messages.getMessage('nameFlagDescription'),
+      description: messages.getMessage('flags.name'),
     }),
     force: flags.boolean({
       char: 'f',
-      description: messages.getMessage('forceFlagDescription'),
+      description: messages.getMessage('flags.force'),
     }),
   };
 
