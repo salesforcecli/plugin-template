@@ -433,22 +433,22 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@oclif/command@^1.5.13", "@oclif/command@^1.5.17", "@oclif/command@^1.5.19", "@oclif/command@^1.5.20", "@oclif/command@^1.6.0", "@oclif/command@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.npmjs.org/@oclif/command/-/command-1.8.0.tgz#c1a499b10d26e9d1a611190a81005589accbb339"
-  integrity sha512-5vwpq6kbvwkQwKqAoOU3L72GZ3Ta8RRrewKj9OJRolx28KLJJ8Dg9Rf7obRwt5jQA9bkYd8gqzMTrI7H3xLfaw==
+"@oclif/command@^1.5.13", "@oclif/command@^1.5.17", "@oclif/command@^1.5.20", "@oclif/command@^1.6.0", "@oclif/command@^1.8.0", "@oclif/command@^1.8.1", "@oclif/command@^1.8.3":
+  version "1.8.16"
+  resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.8.16.tgz#bea46f81b2061b47e1cda318a0b923e62ca4cc0c"
+  integrity sha512-rmVKYEsKzurfRU0xJz+iHelbi1LGlihIWZ7Qvmb/CBz1EkhL7nOkW4SVXmG2dA5Ce0si2gr88i6q4eBOMRNJ1w==
   dependencies:
-    "@oclif/config" "^1.15.1"
-    "@oclif/errors" "^1.3.3"
-    "@oclif/parser" "^3.8.3"
-    "@oclif/plugin-help" "^3"
+    "@oclif/config" "^1.18.2"
+    "@oclif/errors" "^1.3.5"
+    "@oclif/help" "^1.0.1"
+    "@oclif/parser" "^3.8.6"
     debug "^4.1.1"
     semver "^7.3.2"
 
-"@oclif/config@^1", "@oclif/config@^1.14.0", "@oclif/config@^1.15.1", "@oclif/config@^1.17.0":
-  version "1.17.0"
-  resolved "https://registry.npmjs.org/@oclif/config/-/config-1.17.0.tgz#ba8639118633102a7e481760c50054623d09fcab"
-  integrity sha512-Lmfuf6ubjQ4ifC/9bz1fSCHc6F6E653oyaRXxg+lgT4+bYf9bk+nqrUpAbrXyABkCqgIBiFr3J4zR/kiFdE1PA==
+"@oclif/config@1.18.2", "@oclif/config@^1", "@oclif/config@^1.15.1", "@oclif/config@^1.17.0", "@oclif/config@^1.17.1", "@oclif/config@^1.18.2":
+  version "1.18.2"
+  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.18.2.tgz#5bfe74a9ba6a8ca3dceb314a81bd9ce2e15ebbfe"
+  integrity sha512-cE3qfHWv8hGRCP31j7fIS7BfCflm/BNZ2HNqHexH+fDrdF2f1D5S8VmXWLC77ffv3oDvWyvE9AZeR0RfmHCCaA==
   dependencies:
     "@oclif/errors" "^1.3.3"
     "@oclif/parser" "^3.8.0"
@@ -476,21 +476,46 @@
     qqjs "^0.3.10"
     tslib "^2.0.3"
 
-"@oclif/errors@^1.2.1", "@oclif/errors@^1.2.2", "@oclif/errors@^1.3.3":
-  version "1.3.3"
-  resolved "https://registry.npmjs.org/@oclif/errors/-/errors-1.3.3.tgz#fb597dfbc58c6b8609dc0b2fdf91a2d487818a82"
-  integrity sha512-EJR6AIOEkt/NnARNIVAskPDVtdhtO5TTNXmhDrGqMoWVsr0R6DkkLrMyq95BmHvlVWM1nduoq4fQPuCyuF2jaA==
+"@oclif/errors@1.3.5", "@oclif/errors@^1.2.1", "@oclif/errors@^1.2.2", "@oclif/errors@^1.3.3", "@oclif/errors@^1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@oclif/errors/-/errors-1.3.5.tgz#a1e9694dbeccab10fe2fe15acb7113991bed636c"
+  integrity sha512-OivucXPH/eLLlOT7FkCMoZXiaVYf8I/w1eTAM1+gKzfhALwWTusxEx7wBmW0uzvkSg/9ovWLycPaBgJbM3LOCQ==
   dependencies:
     clean-stack "^3.0.0"
-    fs-extra "^9.0.1"
+    fs-extra "^8.1"
     indent-string "^4.0.0"
     strip-ansi "^6.0.0"
     wrap-ansi "^7.0.0"
+
+"@oclif/help@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@oclif/help/-/help-1.0.1.tgz#fd96a3dd9fb2314479e6c8584c91b63754a7dff5"
+  integrity sha512-8rsl4RHL5+vBUAKBL6PFI3mj58hjPCp2VYyXD4TAa7IMStikFfOH2gtWmqLzIlxAED2EpD0dfYwo9JJxYsH7Aw==
+  dependencies:
+    "@oclif/config" "1.18.2"
+    "@oclif/errors" "1.3.5"
+    chalk "^4.1.2"
+    indent-string "^4.0.0"
+    lodash "^4.17.21"
+    string-width "^4.2.0"
+    strip-ansi "^6.0.0"
+    widest-line "^3.1.0"
+    wrap-ansi "^6.2.0"
 
 "@oclif/linewrap@^1.0.0":
   version "1.0.0"
   resolved "https://registry.npmjs.org/@oclif/linewrap/-/linewrap-1.0.0.tgz#aedcb64b479d4db7be24196384897b5000901d91"
   integrity sha512-Ups2dShK52xXa8w6iBWLgcjPJWjais6KPJQq3gQ/88AY6BXoTX+MIGFPrWQO1KLMiQfoTpcLnUwloN4brrVUHw==
+
+"@oclif/parser@3.8.6", "@oclif/parser@^3.8.6":
+  version "3.8.6"
+  resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.8.6.tgz#d5a108af9c708a051cc6b1d27d47359d75f41236"
+  integrity sha512-tXb0NKgSgNxmf6baN6naK+CCwOueaFk93FG9u202U7mTBHUKsioOUlw1SG/iPi9aJM3WE4pHLXmty59pci0OEw==
+  dependencies:
+    "@oclif/errors" "^1.2.2"
+    "@oclif/linewrap" "^1.0.0"
+    chalk "^4.1.0"
+    tslib "^2.0.0"
 
 "@oclif/parser@^3.8.0", "@oclif/parser@^3.8.3":
   version "3.8.5"
@@ -530,7 +555,7 @@
     widest-line "^2.0.1"
     wrap-ansi "^4.0.0"
 
-"@oclif/plugin-help@^3", "@oclif/plugin-help@^3.2.0":
+"@oclif/plugin-help@^3.2.0":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-3.2.1.tgz#0265ef2a7a8a37b0ed64957fb4f1ddac4b457d61"
   integrity sha512-vq7rn16TrQmjX3Al/k1Z5iBZWZ3HE8fDXs52OmDJmmTqryPSNvURH9WCAsqr0PODYCSR17Hy1VTzS0x7vVVLEQ==
@@ -583,7 +608,7 @@
     shelljs "^0.8.4"
     strip-ansi "6.0.1"
 
-"@salesforce/command@^3.0.0", "@salesforce/command@^3.1.3":
+"@salesforce/command@^3.1.3":
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/@salesforce/command/-/command-3.1.3.tgz#d72ed2bc516ce7fea1151576a997b45fd1752d26"
   integrity sha512-Yg9lhl3ghwPN7WwqFmgfWIn6i7vz43WTpEsYsChz80bKORlVbDvhwPZQUj0XTv3DKDnPZVU8FFIDsrLSOa9G1A==
@@ -599,25 +624,42 @@
     chalk "^2.4.2"
     cli-ux "^4.9.3"
 
-"@salesforce/core@^2.2.0", "@salesforce/core@^2.23.4", "@salesforce/core@^2.24.0", "@salesforce/core@^2.28.0":
-  version "2.28.2"
-  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-2.28.2.tgz#02fed89297c8d373d7c0784390abbc0791599268"
-  integrity sha512-ohKNx4v1QL5LMESavn9Bs0ZNA4cw3IGL+dOvP601SphKPCOMiDfZYzfqhtET4R4uTAnJKvtUsuyvQUwL2479jg==
+"@salesforce/command@^4.1.5":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@salesforce/command/-/command-4.2.1.tgz#0d7c24b5f5c172632001ac85e8793d7d6b9721f4"
+  integrity sha512-hanDjR8yLdeKlrlUXjh18pmbSuF+46jtIfjpG0aA1Q089qol9+nqGt64ToeN7df7BM0Vk0X0+765YNKV/zvxlA==
+  dependencies:
+    "@oclif/command" "^1.8.1"
+    "@oclif/errors" "^1.2.2"
+    "@oclif/parser" "3.8.6"
+    "@oclif/plugin-help" "^2.2.0"
+    "@oclif/test" "^1.2.4"
+    "@salesforce/core" "^2.31.0"
+    "@salesforce/kit" "^1.5.17"
+    "@salesforce/ts-types" "^1.5.20"
+    chalk "^2.4.2"
+    cli-ux "^4.9.3"
+
+"@salesforce/core@^2.23.4", "@salesforce/core@^2.24.0", "@salesforce/core@^2.28.0", "@salesforce/core@^2.29.0", "@salesforce/core@^2.31.0":
+  version "2.33.1"
+  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-2.33.1.tgz#23c22953174ad0e809b2f1c7b2881b5ba8a89d9c"
+  integrity sha512-jKVFYEvlV+loBoau5heBOVXmzsPO+RbYh6SPybJK6xF7khQmzu7+WAQbikY2eY8VaXcded2kka8L/FKuD/LKBg==
   dependencies:
     "@salesforce/bunyan" "^2.0.0"
     "@salesforce/kit" "^1.5.0"
     "@salesforce/schemas" "^1.0.1"
     "@salesforce/ts-types" "^1.5.13"
     "@types/graceful-fs" "^4.1.5"
-    "@types/jsforce" "^1.9.29"
+    "@types/jsforce" "^1.9.35"
     "@types/mkdirp" "^1.0.1"
     debug "^3.1.0"
+    faye "^1.4.0"
     graceful-fs "^4.2.4"
     jsen "0.6.6"
-    jsforce "^1.10.1"
+    jsforce "^1.11.0"
     jsonwebtoken "8.5.0"
     mkdirp "1.0.4"
-    sfdx-faye "^1.0.9"
+    semver "^7.3.5"
     ts-retry-promise "^0.6.0"
 
 "@salesforce/dev-config@^2.1.2":
@@ -674,18 +716,28 @@
     "@salesforce/ts-types" "^1.5.20"
     tslib "^2.2.0"
 
-"@salesforce/plugin-command-reference@^1.3.16":
-  version "1.3.16"
-  resolved "https://registry.yarnpkg.com/@salesforce/plugin-command-reference/-/plugin-command-reference-1.3.16.tgz#1cc1d41a5eb0c5b5379b9639ea0bc8bef14b3a9d"
-  integrity sha512-whNMF9TG6bBXA2aTgxlznXs0updiIJH5n5QdIe2y/MtHGqoHQl2Eptw147sT7eYa7+EVjjPloyxouO3m3gBFGg==
+"@salesforce/kit@^1.5.17":
+  version "1.5.22"
+  resolved "https://registry.yarnpkg.com/@salesforce/kit/-/kit-1.5.22.tgz#4994124b3d72c31ec7f4433b6e2275f7e9106c2c"
+  integrity sha512-dPl10G0admKEc4EhxkKFr5Cvyp9UqvbVZHwPwpvE3PztC4osdgCqW00pBqg6xmzn83tus2rldifp493xD3dg9g==
   dependencies:
-    "@oclif/command" "^1.5.19"
-    "@oclif/config" "^1.14.0"
-    "@oclif/errors" "^1.2.2"
-    "@salesforce/command" "^3.0.0"
-    "@salesforce/core" "^2.2.0"
+    "@salesforce/ts-types" "^1.5.20"
+    shx "^0.3.3"
+    tslib "^2.2.0"
+
+"@salesforce/plugin-command-reference@^1.3.16":
+  version "1.3.18"
+  resolved "https://registry.yarnpkg.com/@salesforce/plugin-command-reference/-/plugin-command-reference-1.3.18.tgz#9bd6f94f36c27b28dae4da4d45076fdf91153d05"
+  integrity sha512-U56rm/TLotrRvC0jcpWjCXfOf7idIpwFdHlMMYvY3lDlOLRJxknwA4nVcL2QTcX7H5fBl+ScqddU3aFGt/HzGA==
+  dependencies:
+    "@oclif/command" "^1.8.3"
+    "@oclif/config" "^1.17.1"
+    "@oclif/errors" "^1.3.5"
+    "@salesforce/command" "^4.1.5"
+    "@salesforce/core" "^2.29.0"
     chalk "^3.0.0"
-    handlebars "^4.7.3"
+    handlebars "4.7.7"
+    shelljs "^0.8.4"
     tslib "^1"
 
 "@salesforce/prettier-config@^0.0.2":
@@ -827,10 +879,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/jsforce@^1.9.29":
-  version "1.9.30"
-  resolved "https://registry.yarnpkg.com/@types/jsforce/-/jsforce-1.9.30.tgz#725cba4175ddc17cf9902b6e647f2ed4a9614b50"
-  integrity sha512-T0fgAfa99sx13gkClPkJsQRHzTcJ0Rgj7//6XEY9Qq6VRQH0U+cxlM1fqAsQ8rhAfAzyGhQk+j1nR1cWkp06NQ==
+"@types/jsforce@^1.9.35":
+  version "1.9.37"
+  resolved "https://registry.yarnpkg.com/@types/jsforce/-/jsforce-1.9.37.tgz#63494c9e7fb926a3242c66823d623460d39f60bb"
+  integrity sha512-ZV3bJ7xsPSstrBe3u8YBEd6S1WNljf/A61rQuBCFtEu23SonKEXBg6E3/Jx8k5ofweBaWCtPfO/dTChl4TKFQA==
   dependencies:
     "@types/node" "*"
 
@@ -1224,7 +1276,7 @@ arrify@^2.0.1:
   resolved "https://registry.npmjs.org/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
   integrity sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
 
-asap@*, asap@~2.0.3, asap@~2.0.6:
+asap@*, asap@~2.0.3:
   version "2.0.6"
   resolved "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
@@ -1528,10 +1580,10 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.1.tgz#c80b3fab28bf6371e6863325eee67e618b77e6ad"
-  integrity sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==
+chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1, chalk@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
+  integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
@@ -1954,7 +2006,7 @@ cross-spawn@^7.0.0, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-csprng@*, csprng@~0.1.2:
+csprng@*:
   version "0.1.2"
   resolved "https://registry.npmjs.org/csprng/-/csprng-0.1.2.tgz#4bc68f12fa368d252a59841cbaca974b18ab45e2"
   integrity sha1-S8aPEvo2jSUqWYQcusqXSxirReI=
@@ -2724,14 +2776,7 @@ faye-websocket@>=0.9.1:
   dependencies:
     websocket-driver ">=0.5.1"
 
-faye-websocket@~0.9.1:
-  version "0.9.4"
-  resolved "https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.4.tgz#885934c79effb0409549e0c0a3801ed17a40cdad"
-  integrity sha1-iFk0x57/sECVSeDAo4Ae0XpAza0=
-  dependencies:
-    websocket-driver ">=0.5.1"
-
-faye@^1.2.0:
+faye@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/faye/-/faye-1.4.0.tgz#01d3d26ed5642c1cb203eed358afb1c1444b8669"
   integrity sha512-kRrIg4be8VNYhycS2PY//hpBJSzZPr/DBbcy9VWelhZMW3KhyLkQR0HL0k0MNpmVoNFF4EdfMFkNAWjTP65g6w==
@@ -3213,7 +3258,7 @@ growl@1.10.5:
   resolved "https://registry.npmjs.org/growl/-/growl-1.10.5.tgz#f2735dc2283674fa67478b10181059355c369e5e"
   integrity sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==
 
-handlebars@^4.7.3, handlebars@^4.7.6:
+handlebars@4.7.7, handlebars@^4.7.6:
   version "4.7.7"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.7.tgz#9ce33416aad02dbd6c8fafa8240d5d98004945a1"
   integrity sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA==
@@ -3932,10 +3977,10 @@ jsesc@^2.5.1:
   resolved "https://registry.npmjs.org/jsesc/-/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
   integrity sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
 
-jsforce@^1.10.1:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/jsforce/-/jsforce-1.10.1.tgz#ca1cf58d4439d94e1f84482d83081acd12c93269"
-  integrity sha512-rv+UpBR9n/sWdgLhyPOJuKgT9ZKngypYf9XOHoXVRpSllvTFCjn+M3H81Nu1oYjPH9JKXVS8hL1dmmq8+kOAJg==
+jsforce@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/jsforce/-/jsforce-1.11.0.tgz#7e853b82c534f1fe8e18f432a344bae81881a133"
+  integrity sha512-vYNXJXXdz9ZQNdfRqq/MCJ/zU7JGA7iEduwafQDzChR9FeqXgTNfHTppLVbw9mIniKkQZemmxSOtl7N04lj/5Q==
   dependencies:
     base64-url "^2.2.0"
     co-prompt "^1.0.0"
@@ -3943,7 +3988,7 @@ jsforce@^1.10.1:
     commander "^2.9.0"
     csv-parse "^4.10.1"
     csv-stringify "^1.0.4"
-    faye "^1.2.0"
+    faye "^1.4.0"
     inherits "^2.0.1"
     lodash "^4.17.19"
     multistream "^2.0.5"
@@ -4534,7 +4579,7 @@ minimist-options@4.1.0:
     is-plain-obj "^1.1.0"
     kind-of "^6.0.3"
 
-minimist@1.2.5, minimist@^1.1.3, minimist@^1.2.0, minimist@^1.2.5:
+minimist@1.2.5, minimist@^1.1.3, minimist@^1.2.0, minimist@^1.2.3, minimist@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
@@ -5239,7 +5284,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-psl@^1.1.24, psl@^1.1.28, psl@^1.1.33:
+psl@^1.1.28, psl@^1.1.33:
   version "1.8.0"
   resolved "https://registry.npmjs.org/psl/-/psl-1.8.0.tgz#9326f8bcfb013adcc005fdff056acce020e51c24"
   integrity sha512-RIdOzyoavK+hA18OGGWDqUTsCLhtA7IcZ/6NCs4fFJaHBDab+pDDmDIByWFRQJq2Cd7r1OoQxBGKOaztq+hjIQ==
@@ -5251,11 +5296,6 @@ pump@^3.0.0:
   dependencies:
     end-of-stream "^1.1.0"
     once "^1.3.1"
-
-punycode@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.npmjs.org/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
-  integrity sha1-wNWmOycYgArY4esPpSachN1BhF4=
 
 punycode@^2.1.0, punycode@^2.1.1:
   version "2.1.1"
@@ -5683,17 +5723,6 @@ set-value@^2.0.0, set-value@^2.0.1:
     is-plain-object "^2.0.3"
     split-string "^3.0.1"
 
-sfdx-faye@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.npmjs.org/sfdx-faye/-/sfdx-faye-1.0.9.tgz#24e678ddb783d7085f3e40a2c155ac367416be26"
-  integrity sha512-/p0Ifvhh9rVYj6YmYOBU+psQsP+9RrNrUU4lr1p+HhZhTgnviMIabcgKZUN12S69zUpl0YagpFdMhmxKGkf+5g==
-  dependencies:
-    asap "~2.0.6"
-    csprng "~0.1.2"
-    faye-websocket "~0.9.1"
-    tough-cookie "~2.4.3"
-    tunnel-agent "~0.6.0"
-
 shebang-command@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/shebang-command/-/shebang-command-1.2.0.tgz#44aac65b695b03398968c39f363fee5deafdf1ea"
@@ -5744,6 +5773,14 @@ shx@0.2.2:
     es6-object-assign "^1.0.3"
     minimist "^1.2.0"
     shelljs "^0.7.3"
+
+shx@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/shx/-/shx-0.3.3.tgz#681a88c7c10db15abe18525349ed474f0f1e7b9f"
+  integrity sha512-nZJ3HFWVoTSyyB+evEKjJ1STiixGztlqwKLTUNV5KqMWtGey9fTd4KU1gdZ1X9BV6215pswQ/Jew9NsuS/fNDA==
+  dependencies:
+    minimist "^1.2.3"
+    shelljs "^0.8.4"
 
 side-channel@^1.0.4:
   version "1.0.4"
@@ -6301,14 +6338,6 @@ tough-cookie@*:
     punycode "^2.1.1"
     universalify "^0.1.2"
 
-tough-cookie@~2.4.3:
-  version "2.4.3"
-  resolved "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.4.3.tgz#53f36da3f47783b0925afa06ff9f3b165280f781"
-  integrity sha512-Q5srk/4vDM54WJsJio3XNn6K2sCG+CQ8G5Wz6bZhRZoAe/+TxjWB/GlFAnYEbkYVlON9FMk/fE3h2RLpPXo4lQ==
-  dependencies:
-    psl "^1.1.24"
-    punycode "^1.4.1"
-
 tough-cookie@~2.5.0:
   version "2.5.0"
   resolved "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.5.0.tgz#cd9fb2a0aa1d5a12b473bd9fb96fa3dcff65ade2"
@@ -6399,7 +6428,7 @@ tsutils@^3.21.0:
   dependencies:
     tslib "^1.8.1"
 
-tunnel-agent@*, tunnel-agent@^0.6.0, tunnel-agent@~0.6.0:
+tunnel-agent@*, tunnel-agent@^0.6.0:
   version "0.6.0"
   resolved "https://registry.npmjs.org/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"
   integrity sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=
