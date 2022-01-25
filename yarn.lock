@@ -590,7 +590,8 @@
   resolved "https://registry.yarnpkg.com/@oclif/plugin-command-snapshot/-/plugin-command-snapshot-2.2.2.tgz#2da73d06886e8b74c5e95f7369562d795dcfa5a2"
   integrity sha512-8ujiuGTncfVEbIM4mtOe/PzBaE8m2Bgr13ILxSFf/ZRUVNPs/DSG2DlmxUUf2kpmMhKD7U4lGVqI4em+TJsBiQ==
   dependencies:
-    "@oclif/core" "^1.0.1"
+    "@oclif/command" "^1.6.0"
+    "@oclif/config" "^1"
     chalk "^4.1.1"
     just-diff "^3.1.1"
     semver "^7.3.5"
