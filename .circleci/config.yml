@@ -70,7 +70,8 @@ workflows:
     when:
       equal: [dependabot-automerge, << pipeline.parameters.workflow >>]
     jobs:
-      - release-management/dependabot-automerge
+      - release-management/dependabot-automerge:
+          context: release
 parameters:
   sfdx_version:
     description: |
