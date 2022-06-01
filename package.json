@@ -7,7 +7,6 @@
   "bugs": "https://github.com/forcedotcom/cli/issues",
   "dependencies": {
     "@oclif/core": "^1.9.0",
-    "@oclif/plugin-version": "^1",
     "@salesforce/command": "^5.1.3",
     "@salesforce/core": "^3.19.1",
     "tslib": "^2"
@@ -68,15 +67,6 @@
   ],
   "license": "BSD-3-Clause",
   "oclif": {
-    "additionalVersionFlags": [
-      "-v"
-    ],
-    "additionalHelpFlags": [
-      "-h"
-    ],
-    "plugins": [
-      "@oclif/plugin-version"
-    ],
     "commands": "./lib/commands",
     "bin": "sfdx",
     "devPlugins": [
