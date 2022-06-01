@@ -7,7 +7,7 @@
 
 import * as os from 'os';
 import { flags, SfdxCommand } from '@salesforce/command';
-import { Messages, SfdxError } from '@salesforce/core';
+import { Messages, SfError } from '@salesforce/core';
 import { AnyJson } from '@salesforce/ts-types';
 
 // Initialize Messages with the current plugin directory
@@ -65,7 +65,7 @@ export default class Org extends SfdxCommand {
     // Organization will always return one result, but this is an example of throwing an error
     // The output and --json will automatically be handled for you.
     if (!result.records || result.records.length <= 0) {
-      throw new SfdxError(messages.getMessage('errorNoOrgResults', [this.org.getOrgId()]));
+      throw new SfError(messages.getMessage('errorNoOrgResults', [this.org.getOrgId()]));
     }
 
     // Organization always only returns one result
