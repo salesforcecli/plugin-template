@@ -38,7 +38,9 @@ describe('Limits display', () => {
   });
 
   it('tests the location flag', () => {
-    const output = execCmd<Organization>("hello:org --location 'San Francisco' --json", { ensureExitCode: 0 }).jsonOutput;
+    const output = execCmd<Organization>("hello:org --location 'San Francisco' --json", {
+      ensureExitCode: 0,
+    }).jsonOutput;
     expect(output.result.outputString).contains('San Francisco');
     expect(output.status).to.equal(0);
   });
