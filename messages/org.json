@@ -2,7 +2,8 @@
   "commandDescription": "print a greeting and your org IDs",
   "flags": {
     "name": "name to print",
-    "force": "example boolean flag"
+    "force": "example boolean flag",
+    "location": "location to print"
   },
   "examples": [
     "sfdx hello:org --targetusername myOrg@example.com --targetdevhubusername devhub@org.com\n  Hello world! This is org: MyOrg and I will be around until Tue Mar 20 2018!\n  My hub org id is: 00Dxx000000001234\n",
