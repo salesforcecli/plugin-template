@@ -7,7 +7,7 @@
 
 import * as os from 'os';
 import { flags, SfdxCommand } from '@salesforce/command';
-import { Messages, SfdxError } from '@salesforce/core';
+import { Messages, SfError } from '@salesforce/core';
 import { AnyJson } from '@salesforce/ts-types';
 
 // Initialize Messages with the current plugin directory
@@ -35,6 +35,10 @@ export default class Org extends SfdxCommand {
       char: 'f',
       description: messages.getMessage('flags.force'),
     }),
+    location: flags.string({
+      char: 'l',
+      description: messages.getMessage('flags.location'),
+    }),
   };
 
   // Comment this out if your command does not require an org username
@@ -48,7 +52,7 @@ export default class Org extends SfdxCommand {
 
   public async run(): Promise<AnyJson> {
     const name = (this.flags.name as string) || 'world';
-
+    const location = (this.flags.location as string) || 'a hidden location';
     // this.org is guaranteed because requiresUsername=true, as opposed to supportsUsername
     const conn = this.org.getConnection();
     const query = 'Select Name, TrialExpirationDate from Organization';
@@ -65,14 +69,14 @@ export default class Org extends SfdxCommand {
     // Organization will always return one result, but this is an example of throwing an error
     // The output and --json will automatically be handled for you.
     if (!result.records || result.records.length <= 0) {
-      throw new SfdxError(messages.getMessage('errorNoOrgResults', [this.org.getOrgId()]));
+      throw new SfError(messages.getMessage('errorNoOrgResults', [this.org.getOrgId()]));
     }
 
     // Organization always only returns one result
     const orgName: string = result.records[0].Name;
     const trialExpirationDate = result.records[0].TrialExpirationDate;
 
-    let outputString = `Hello ${name}! This is org: ${orgName}`;
+    let outputString = `Hello ${name} from ${location}! This is org: ${orgName}`;
     if (trialExpirationDate) {
       const date = new Date(trialExpirationDate).toDateString();
       outputString = `${outputString} and I will be around until ${date}!`;

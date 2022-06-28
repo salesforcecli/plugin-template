@@ -28,7 +28,7 @@ describe('hello:org', () => {
     .command(['hello:org', '--targetusername', 'test@org.com'])
     .it('runs hello:org --targetusername test@org.com', (ctx) => {
       expect(ctx.stdout).to.contain(
-        'Hello world! This is org: Super Awesome Org and I will be around until Tue Mar 20 2018!'
+        'Hello world from a hidden location! This is org: Super Awesome Org and I will be around until Tue Mar 20 2018!'
       );
     });
 });
