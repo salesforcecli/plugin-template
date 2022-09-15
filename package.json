@@ -1,7 +1,7 @@
 {
   "name": "@salesforce/plugin-template",
   "description": "A template repository for sfdx plugins",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "lib/index.js",
   "author": "Salesforce",
   "bugs": "https://github.com/forcedotcom/cli/issues",
