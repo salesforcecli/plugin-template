@@ -30,6 +30,7 @@ export default class Org extends SfdxCommand {
     name: flags.string({
       char: 'n',
       description: messages.getMessage('flags.name'),
+      default: 'world',
     }),
     force: flags.boolean({
       char: 'f',
@@ -38,6 +39,7 @@ export default class Org extends SfdxCommand {
     location: flags.string({
       char: 'l',
       description: messages.getMessage('flags.location'),
+      default: 'a hidden location',
     }),
   };
 
@@ -51,8 +53,9 @@ export default class Org extends SfdxCommand {
   protected static requiresProject = false;
 
   public async run(): Promise<AnyJson> {
-    const name = (this.flags.name as string) || 'world';
-    const location = (this.flags.location as string) || 'a hidden location';
+    // flag types are unknown in sfdx. the sf cli does this better.
+    const name = this.flags.name as string;
+    const location = this.flags.location as string;
     // this.org is guaranteed because requiresUsername=true, as opposed to supportsUsername
     const conn = this.org.getConnection();
     const query = 'Select Name, TrialExpirationDate from Organization';

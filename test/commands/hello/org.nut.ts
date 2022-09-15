@@ -7,24 +7,22 @@
 
 import { expect } from 'chai';
 import { execCmd, TestSession } from '@salesforce/cli-plugins-testkit';
-import { Env } from '@salesforce/kit';
-import { ensureString } from '@salesforce/ts-types';
-
 export interface Organization {
   orgId: string;
   outputString: string;
 }
 
 describe('Limits display', () => {
-  const env = new Env();
   let username: string;
   let testSession: TestSession;
 
-  before('prepare session and ensure environment variables', async () => {
-    username = ensureString(env.getString('TESTKIT_HUB_USERNAME'));
+  before('prepare session', async () => {
     testSession = await TestSession.create({
-      setupCommands: [`sfdx force:org:create edition=Developer -a MyScratchOrg -s -v=${username}`],
+      setupCommands: ['sfdx force:org:create edition=Developer -a MyScratchOrg -s --json'],
     });
+    // we don't have typing for the results of arbitrary setup commands
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+    username = testSession.setup[0].result.username;
   });
 
   after(async () => {
