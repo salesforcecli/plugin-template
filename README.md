@@ -1,4 +1,4 @@
-### Use the [lerna template](https://github.com/salesforcecli/lerna-template) if you need a library and plugin
+> We recommend that new plugins use sf rather than sfdx. See https://github.com/salesforcecli/plugin-template-sf
 
 ### This template is useful if the library is already in another repository or the plugin is a wrapper around an API.
 
