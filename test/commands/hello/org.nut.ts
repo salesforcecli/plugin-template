@@ -7,8 +7,6 @@
 
 import { expect } from 'chai';
 import { execCmd, TestSession } from '@salesforce/cli-plugins-testkit';
-import { Env } from '@salesforce/kit';
-import { ensureString } from '@salesforce/ts-types';
 
 export interface Organization {
   orgId: string;
@@ -16,14 +14,19 @@ export interface Organization {
 }
 
 describe('Limits display', () => {
-  const env = new Env();
-  let username: string;
   let testSession: TestSession;
 
   before('prepare session and ensure environment variables', async () => {
-    username = ensureString(env.getString('TESTKIT_HUB_USERNAME'));
     testSession = await TestSession.create({
-      setupCommands: [`sfdx force:org:create edition=Developer -a MyScratchOrg -s -v=${username}`],
+      devhubAuthStrategy: 'AUTO',
+      scratchOrgs: [
+        {
+          executable: 'sfdx',
+          edition: 'developer',
+          alias: 'MyScratchOrg',
+          setDefault: true,
+        },
+      ],
     });
   });
 
@@ -32,6 +35,7 @@ describe('Limits display', () => {
   });
 
   it('tests the name flag', () => {
+    const username = testSession.orgs.get('default').username;
     const output = execCmd<Organization>(`hello:org --name ${username} --json`, { ensureExitCode: 0 }).jsonOutput;
     expect(output.result.orgId).length.greaterThan(0);
     expect(output.status).to.equal(0);
