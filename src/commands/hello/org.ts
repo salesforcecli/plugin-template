@@ -51,8 +51,8 @@ export default class Org extends SfdxCommand {
   protected static requiresProject = false;
 
   public async run(): Promise<AnyJson> {
-    const name = (this.flags.name as string) || 'world';
-    const location = (this.flags.location as string) || 'a hidden location';
+    const name = (this.flags.name as string) ?? 'world';
+    const location = (this.flags.location as string) ?? 'a hidden location';
     // this.org is guaranteed because requiresUsername=true, as opposed to supportsUsername
     const conn = this.org.getConnection();
     const query = 'Select Name, TrialExpirationDate from Organization';
