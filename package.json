@@ -16,7 +16,7 @@
     "@salesforce/cli-plugins-testkit": "^3.2.0",
     "@salesforce/dev-config": "^3.0.1",
     "@salesforce/dev-scripts": "^3.1.0",
-    "@salesforce/plugin-command-reference": "^1.4.3",
+    "@salesforce/plugin-command-reference": "^1.4.4",
     "@salesforce/prettier-config": "^0.0.2",
     "@salesforce/ts-sinon": "1.4.0",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
