@@ -1016,13 +1016,13 @@
     mv "~2"
     safe-json-stringify "~1"
 
-"@salesforce/cli-plugins-testkit@^3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@salesforce/cli-plugins-testkit/-/cli-plugins-testkit-3.2.4.tgz#09af90c092bf16bc6281eb9d257fbf76d099cf11"
-  integrity sha512-wnJHu6vC/snC3shLRQAzJk16M9QgsruiwrQKaD1wfXxnPzSlf1/vRA6djICryzOLkG6zO43z1kZ7GkEpecnX/Q==
+"@salesforce/cli-plugins-testkit@^3.2.8":
+  version "3.2.8"
+  resolved "https://registry.yarnpkg.com/@salesforce/cli-plugins-testkit/-/cli-plugins-testkit-3.2.8.tgz#0ebbc1391ad4d06ae6eab5755f886a3c04b9bd89"
+  integrity sha512-iZ/HPSlMainyokCxwYt6Np+8R9mddOunA7ACWhdTKy0CbMfm6ImjW06RcekXym2d0NU0d/OH+8hqYJSOj1IsTA==
   dependencies:
-    "@salesforce/core" "^3.31.16"
-    "@salesforce/kit" "^1.6.1"
+    "@salesforce/core" "^3.31.19"
+    "@salesforce/kit" "^1.8.0"
     "@salesforce/ts-types" "^1.5.21"
     "@types/shelljs" "^0.8.11"
     archiver "^5.2.0"
@@ -1043,10 +1043,10 @@
     "@salesforce/ts-types" "^1.7.1"
     chalk "^2.4.2"
 
-"@salesforce/core@^3.19.1", "@salesforce/core@^3.31.10", "@salesforce/core@^3.31.16", "@salesforce/core@^3.31.17":
-  version "3.31.17"
-  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-3.31.17.tgz#83ab3c9c4730223943ceef4798aaa901fec7981e"
-  integrity sha512-rn3AYyePp3m1+IH+KVi+DWwMPcAPDYFiUxyJLh+Jr2hNj9i79eQBcUix6wunK3HaVz0N6Tm5FGIpjqfEVsU0cA==
+"@salesforce/core@^3.19.1", "@salesforce/core@^3.31.10", "@salesforce/core@^3.31.17", "@salesforce/core@^3.31.19":
+  version "3.31.19"
+  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-3.31.19.tgz#29366aee1e9e271d3bef6d0a5e60204f3885daf7"
+  integrity sha512-Qx4F7n+1eENICD9yvTrSI5+HVbjZ/B3vzNjdjZ4aNHO5MvEgg93vs1KeGujfGU4lzaEj5Wuy7delp5wJC0a1aA==
   dependencies:
     "@salesforce/bunyan" "^2.0.0"
     "@salesforce/kit" "^1.7.0"
