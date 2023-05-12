@@ -1,4 +1,4 @@
-🛑 Deprecated
+# 🛑 Deprecated
 
 This template used the deprecated SfdxCommand.
 
